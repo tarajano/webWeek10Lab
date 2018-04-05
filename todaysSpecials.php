@@ -15,7 +15,7 @@
             new MenuItem("WP Kebobs", "Tender cuts of beef and chicken, served with your choice of side",
                 "17","images/kebobs.jpg","Kebobs","WP Kebobs")
         );
-        $specialsItemStringFormat = '<hr><img src=%s alt=%s title=%s><h3> %s </h3><p> %s - $%d </p><hr>';
+        $specialsItemStringFormat = '<hr><img src="%s" alt="%s" title="%s"><h3>%s</h3><p>%s - $%d</p><hr>';
 
         $dayOfTheWeek = date("l");
         echo '<aside><h2>'.$dayOfTheWeek.'\'s Specials</h2>';
