@@ -26,7 +26,7 @@
 <!--                </div>-->
 <!--            </nav>-->
             <?php
-                include 'header.php';
+                include('header.php');
                 echo "$headHeaderNavigation";
             ?>
 
@@ -35,8 +35,8 @@
             </div><!-- End Content -->
 
             <?php
-            include 'footer.php';
-            echo "$footer";
+                include('footer.php');
+                echo "$footer";
             ?>
             <!--            <footer>-->
             <!--                <p>&copy; 2013 CST8285. All Rights Reserved.</p>-->

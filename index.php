@@ -26,23 +26,27 @@
 <!--                </div>-->
 <!--            </nav>-->
         <?php
-            include 'header.php';
+            include('header.php');
             echo "$headHeaderNavigation";
         ?>
-
             <div id="content" class="clearfix">
-                <aside>
-                        <h2>Today's Specials</h2>
-                        <hr>
-                        <img src="images/burger_small.jpg" alt="Burger" title="Monday's Special - Burger">
-                        <h3>The WP Burger</h3>
-                        <p>Freshly made all-beef patty served up with homefries - $14</p>
-                        <hr>
-                        <img src="images/kebobs.jpg" alt="Kebobs" title="WP Kebobs">
-                        <h3>WP Kebobs</h3>
-                        <p>Tender cuts of beef and chicken, served with your choice of side - $17</p>
-                        <hr>
-                </aside>
+<!--                <aside>-->
+
+                    <?php
+                        include('todaysSpecials.php');
+                        echoTodaysSpecials();
+                    ?>
+<!--                        <h2>Today's Specials</h2>-->
+<!--                        <hr>-->
+<!--                        <img src="images/burger_small.jpg" alt="Burger" title="Monday's Special - Burger">-->
+<!--                        <h3>The WP Burger</h3>-->
+<!--                        <p>Freshly made all-beef patty served up with homefries - $14</p>-->
+<!--                        <hr>-->
+<!--                        <img src="images/kebobs.jpg" alt="Kebobs" title="WP Kebobs">-->
+<!--                        <h3>WP Kebobs</h3>-->
+<!--                        <p>Tender cuts of beef and chicken, served with your choice of side - $17</p>-->
+<!--                        <hr>-->
+<!--                </aside>-->
                 <div class="main">
                     <h1>Welcome</h1>
                     <img src="images/dining_room.jpg" alt="Dining Room" title="The WP Eatery Dining Room" class="content_pic">
@@ -54,7 +58,7 @@
             </div><!-- End Content -->
 
         <?php
-            include 'footer.php';
+            include('footer.php');
             echo "$footer";
         ?>
 <!--            <footer>-->

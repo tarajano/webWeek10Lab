@@ -26,7 +26,7 @@
 <!--                </div>-->
 <!--            </nav>-->
             <?php
-                include 'header.php';
+                include('header.php');
                 echo "$headHeaderNavigation";
             ?>
 
@@ -74,7 +74,7 @@
                 </div><!-- End Main -->
             </div><!-- End Content -->
             <?php
-                include 'footer.php';
+                include('footer.php');
                 echo "$footer";
             ?>
 <!--            <footer>-->
