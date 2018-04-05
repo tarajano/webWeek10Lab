@@ -5,19 +5,6 @@
  * Date: 05/04/18
  * Time: 12:23 PM
  */
-
-//<h2>Today's Specials</h2>
-//<hr>
-//<img src="images/burger_small.jpg" alt="Burger" title="Monday's Special - Burger">
-//<h3>The WP Burger</h3>
-//<p>Freshly made all-beef patty served up with homefries - $14</p>
-//<hr>
-//<img src="images/kebobs.jpg" alt="Kebobs" title="WP Kebobs">
-//<h3>WP Kebobs</h3>
-//<p>Tender cuts of beef and chicken, served with your choice of side - $17</p>
-//<hr>
-//    global $specialsArray, $specialsAsString;
-
     include('MenuItem.php');
 
     function echoTodaysSpecials(){
@@ -30,7 +17,8 @@
         );
         $specialsItemStringFormat = '<hr><img src=%s alt=%s title=%s><h3> %s </h3><p> %s - $%d </p><hr>';
 
-        echo '<aside><h2>Today\'s Specials</h2>';
+        $dayOfTheWeek = date("l");
+        echo '<aside><h2>'.$dayOfTheWeek.'\'s Specials</h2>';
 
         foreach ($specialsArray as $specialItem){
             echo sprintf($specialsItemStringFormat,
